@@ -1,7 +1,7 @@
-#from board import Board  # import the core game logic class from from board.py
+from board import Board  # import the core game logic class from from board.py
 
 class Frame:
-  
+    
     '''The frame class wraps around a board object and tracks additional context, 
     including which player's turn it is. Its's desgined to support our MCTS simulations
     and agent level reasoning. 
@@ -25,10 +25,10 @@ class Frame:
 
     def apply_move(self, column):
         ''' Apply a move to the board, then switch players.
-        
         Parameters: 
         column- the column index (0-6) where the current player wants to drop a piece
         
+    
         Return:
         success- returns true if the move was applied, false if the column is full. 
         '''
@@ -44,6 +44,7 @@ class Frame:
         
         Parameters:
         player- can be player 1 or 2
+        
         
         Returns 
         true if the specified player has 
@@ -65,3 +66,6 @@ class Frame:
         Ensures original state is preserved during rollouts. 
         '''
         return Frame(board=self.board, current_player=self.current_player)
+    def get_winner(self):
+        return self.board.get_winner()
+
