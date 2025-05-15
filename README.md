@@ -22,13 +22,12 @@
 
 ```
 
-├── board.py                 # Core 6×7 board logic (drop, legal moves, win/draw)
-├── threat\_detection.py      # Immediate win/block pattern checks
+├── board.py
+├── threat\_detection.py
 ├── frame\_based\_representation.py
-│     └─ Frame class for simulations
-├── mcts\_logic.py            # Flat MCTS + threat‑filter hybrid agent
-├── play\_vs\_agent.py         # Human vs. AI demo loop
-└── README.md                # (You’re reading this!)
+├── mcts\_logic.py
+├── play\_vs\_agent.py
+└── README.md
 
 ````
 
@@ -42,10 +41,10 @@
    cd pikachu
 ````
 
-2. **Install** (no external dependencies!)
+2. **Verify** Python version (3.9+):
 
    ```bash
-   python3 --version   # ensure Python 3.9+
+   python3 --version
    ```
 
 3. **Play** against the AI
@@ -79,5 +78,8 @@
 * **Win/Tie rate** ≥ 95% vs. naïve agents
 * **Decision time** ≈ 0.4 s per move on a 6×7 board
 
----
 
+
+
+```
+```
