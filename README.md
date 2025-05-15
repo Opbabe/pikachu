@@ -21,23 +21,6 @@
 ## 📂 What’s Inside
 
 ```
-
-pikachu-connect4/
-├── README.md
-├── requirements.txt
-├── src
-│   ├── board.py
-│   ├── threat_detection.py
-│   ├── frame_based_representation.py
-│   ├── mcts_logic.py
-│   └── play_vs_agent.py
-├── tests
-│   ├── test_board.py
-│   ├── test_threat_detection.py
-│   ├── test_frame.py
-│   └── test_mcts.py
-└── .gitignore
-
 ````
 
 ---
